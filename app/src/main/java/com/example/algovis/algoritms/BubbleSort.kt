@@ -2,8 +2,7 @@ package com.example.algovis.algoritms
 
 class BubbleSort : AlgorithmBP {
     override suspend fun sort(
-        arr: IntArray,
-        onSwap: (IntArray) -> Unit
+        arr: IntArray, onSwap: (IntArray) -> Unit
     ) {
         for (i in 0 until arr.size) {
             for (j in i + 1 until arr.size) {

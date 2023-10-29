@@ -39,22 +39,27 @@ fun AlgorithmSelectionDropdown(
         // Dropdown button
         Button(
             colors = ButtonDefaults.buttonColors(
-                backgroundColor = Color(0xffa98467),
+                backgroundColor = Color(0xfff6aa1c),
                 contentColor = Color.White,
             ),
             onClick = {expanded = !expanded},
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(16.dp)
+                .padding(10.dp)
         ){
-            Text(selectedAlgorithm.name)
+            Text(
+                text =selectedAlgorithm.name,
+                style = TextStyle(
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 20.sp
+                ))
         }
 
         // Dropdown menu
         DropdownMenu(
             expanded = expanded, // Use a state variable to control this
             onDismissRequest = { expanded = false},
-            modifier = Modifier.fillMaxWidth()
+            modifier = Modifier.fillMaxWidth().background(Color(0xfff6aa1c))
         ) {
             MainActivity.Algorithm.values().forEach { algorithm ->
                 DropdownMenuItem(
@@ -64,16 +69,16 @@ fun AlgorithmSelectionDropdown(
                     },
                     modifier = Modifier
                         .fillMaxWidth()
-                        .background(Color(0xffa98467)) // Background color
+                        .background(Color(0xffff8500))
                 ) {
                     Text(
                         text = algorithm.name,
                         style = TextStyle(
                             color = Color.White, // Text color
-                            fontWeight = FontWeight.Normal,
-                            fontSize = 18.sp
+                            fontWeight = FontWeight.SemiBold,
+                            fontSize = 20.sp
                         ),
-                        modifier = Modifier.padding(18.dp) // Item padding
+                        modifier = Modifier.padding(12.dp) // Item padding
                     )
                 }
             }

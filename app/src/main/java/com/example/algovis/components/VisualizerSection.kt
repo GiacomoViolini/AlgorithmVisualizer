@@ -39,7 +39,7 @@ fun VisualizerSection(
                     modifier = Modifier
                         .height(if (it.dp > maxHeight) maxHeight else it.dp)
                         .width(itemWidth)
-                        .background(Color(0xff6c584c))
+                        .background(Color.White)
                 )
             }
         }

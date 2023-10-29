@@ -57,7 +57,7 @@ class MainActivity : ComponentActivity() {
                     contentAlignment = Alignment.BottomCenter,
                     modifier = Modifier
                         .fillMaxSize()
-                        .background(Color(0xfffefae0))
+                        .background(Color(0xFFff8500))
                 ) {
                     Column(
                         modifier = Modifier

@@ -30,7 +30,7 @@ fun VisBottomBar(
 ){
     BottomAppBar (
         modifier = modifier,
-        backgroundColor = Color(0xfffefae0)
+        backgroundColor = Color(0xfff6aa1c)
     ){
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -44,7 +44,7 @@ fun VisBottomBar(
                 Icon(
                     painter = painterResource(id = R.drawable.ic_horizontal),
                     contentDescription = "Slow Down",
-                    tint = Color(0xffa98467)
+                    tint = Color.White
                 )
             }
             IconButton(
@@ -54,7 +54,7 @@ fun VisBottomBar(
                 Icon(
                     painter = painterResource(id = if (!isPlaying) R.drawable.ic_play else R.drawable.ic_pause),
                     contentDescription = "PlayPause",
-                    tint = Color(0xffa98467)
+                    tint = Color.White
                 )
             }
             IconButton(
@@ -64,7 +64,7 @@ fun VisBottomBar(
                 Icon(
                     imageVector = Icons.Default.Add,
                     contentDescription = "Speed Up",
-                    tint = Color(0xffa98467)
+                    tint = Color.White
                 )
             }
             IconButton(
@@ -74,7 +74,7 @@ fun VisBottomBar(
                 Icon(
                     imageVector = Icons.Default.ArrowBack,
                     contentDescription = "Previous",
-                    tint = Color(0xffa98467)
+                    tint = Color.White
                 )
             }
             IconButton(
@@ -84,7 +84,7 @@ fun VisBottomBar(
                 Icon(
                     imageVector = Icons.Default.ArrowForward,
                     contentDescription = "Next",
-                    tint = Color(0xffa98467)
+                    tint = Color.White
                 )
             }
         }
